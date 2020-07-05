@@ -5,6 +5,11 @@
     color: white;
 }
 
+.header-brand-title a:link, .header-brand-title a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 .header-brand-title a:link {
     text-decoration: none;
 }

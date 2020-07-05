@@ -1,43 +1,44 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.header-brand-title {
-    font-family: 'Julius Sans One', sans-serif;
-    background-color: rgb(129,154,212);
-    margin: auto;
-    color: white;
-}
-
-.header-brand-title a:link {
-    text-decoration: none;
-}
-
-
-subheader h2 {
-    display: block;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(129,154,212);
-}
-
-button {
-    padding: 20px;
-    border: 0px;
-    margin-top: 100px;
-    border-radius: 5px;
-    box-shadow: -2px -2px 1px;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.button-style {
     text-align: center;
 }
 
 .fi {
     color: rgb(253,255,74);
+}
+
+.header-brand-title {
+    font-family: 'Julius Sans One', sans-serif; /* google font-family call for brand title */
+    background-color: rgb(129,154,212);
+    margin: auto;
+    color: white;
+}
+
+.header-brand-title a:link, .header-brand-title a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+subheader h2 {
+    font-family: 'Mukta', sans-serif; /* google font-family call for subheader/tag line */
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    margin-top: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    padding: 30px;
+    border: 0px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+    box-shadow: -2px -2px 1px;
 }
 
