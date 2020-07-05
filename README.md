@@ -1,1 +1,7 @@
-# group-project-1
+# Xpensifi
+
+-description-
+
+-technologies used-
+
+-link to deployed application-
