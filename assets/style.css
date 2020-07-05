@@ -1,0 +1,10 @@
+* {
+    text-align: center;
+}
+
+.brand-title {
+    text-align: left;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: rgb(129,154,212);
+    color: white;
+}
