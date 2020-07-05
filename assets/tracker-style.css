@@ -1,5 +1,14 @@
-.brand-title {
+.header-brand-title {
     font-family: 'Julius Sans One', sans-serif;
     background-color: rgb(129,154,212);
+    margin: auto;
     color: white;
+}
+
+.header-brand-title a:link {
+    text-decoration: none;
+}
+
+.fi {
+    color: rgb(253,255,74);
 }
