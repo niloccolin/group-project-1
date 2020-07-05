@@ -29,16 +29,26 @@ subheader h2 {
 footer {
     left: 0;
     bottom: 0;
-    margin-top: 250px;
+    margin-top: 275px;
     width: 100%;
+    text-align: center; 
+}
+
+h3 {
+    font-size: 25px;
+    border-radius: 5px;
     text-align: center;
+    font-family: 'Mukta', sans-serif;
+    background-color: rgb(253,255,74);
 }
 
 button {
-    padding: 30px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    padding: 30px 100px 30px 100px;
     border: 0px;
     margin-bottom: 70px;
     border-radius: 5px;
-    box-shadow: -2px -2px 1px;
+    box-shadow: 2px 2px 1px;
 }
 
