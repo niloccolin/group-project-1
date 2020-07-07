@@ -18,9 +18,215 @@
     <header class="header-brand-title" a href="index.html"> <!-- heads up, this particular html file is linked to the "tracker-style.css" stylesheet -->
         <a href="index.html">
             <h1>xpensi<span class="fi">fi</span></h1>
-        </a>
+        </a>    
     </header>
 
-</body>
+    <style>
+        .container {
+          position: relative;
+          width: 50%;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+          
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #008CBA;
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          color: white;
+          font-size: 26px;
+          font-family: 'Julius Sans One', 'sans-serif';
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+        </style>
+        </head>
+        
+        
+        <div class="container">
+          <img src="assets/gplogo.jpg" alt="xpensifi" class="center" style="max-width:100%;height:auto;">
+          <div class="overlay">
+            <div class="text">imagine life without debt. <br>let us help you become debt free.</div>
+          </div>
+        </div>
 
+        <style> 
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: lavender;
+            padding: 10px;
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size:30px;
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .item3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .item4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+
+        .item5 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+        .item6 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+
+        .item7 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+
+        .item8 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 8;
+            grid-row-end: 9;
+        }
+
+        .item9 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 9;
+            grid-row-end: 10;
+        }
+
+        .item10 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:10;
+            grid-row-end: 11;
+        }
+
+        .item11 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .item12 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            text-align: left; /*why is this not aligning to the left..*/
+        }
+
+        .item13 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+
+        .item14 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+        .item15 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+
+        .item16 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 9;
+            grid-row-end: 11;
+        }
+        </style>
+
+        <!--Need to make this grid fluid, https://www.w3schools.com/w3css/w3css_grid.asp
+        
+        Also want to add html forms to the individual boxes. Which will also need to be able to store client-side data (persistent data).-->
+
+    <h1>tell us a little about your current expenses</h1>
+    <div class="grid-container">
+
+        <div class="item1">Monthly Expense Tracker</div>
+        <div class="item2">Mortgage / Rent: $</div>
+        <div class="item3">Utilities: $</div>
+        <div class="item4">Transportation Cost: $</div> <!--maybe add hover over question here, this can be your car payment and insurance payment or transportation for the bus, motorcyle, etc.-->
+        <div class="item5">Insurance: $</div>
+        <div class="item6">Phone: $</div>
+        <div class="item7">Groceries: $</div>
+        <div class="item8">Eating Out: $</div>
+        <div class="item9">Credit Card Debt: $</div>
+        <div class="item10">School Debt: $</div>
+        <div class="item11">Summary:</div>
+        <div class="item12">Total Income: $</div> <!--align text to left..somehow-->
+        <div class="item13">Total Expenses: $</div>
+        <div class="item14">Remaining: $</div> <!--maybe add hover over, "remember that every dollar has a job. Where can the remaining money is this category go to help pay down your debt quicker??-->
+        <div class="item15">First API</div>
+        <div class="item16">Second API</div>
+
+
+    </div>
+    <p>additional information about the grid here..REMEMBER, EVERY DOLLAR HAS A JOB.</p>
+        
+</body>
 </html>
