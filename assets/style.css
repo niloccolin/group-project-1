@@ -52,3 +52,37 @@ button {
     box-shadow: 2px 2px 1px;
 }
 
+#today {
+    background-color: lightgray;
+    border: solid, black;
+    border-top: solid, black;
+    border-bottom: solid, black;
+    border-left: solid, black;
+    border-right: solid, black;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    font-family: sans-serif
+   }
+
+ #desc {
+    display: inline-block; 
+    justify-content: space-around;
+    display: inline;
+
+}
+
+#name {
+    display: inline-block;
+
+}
+
+#day {
+    display: inline-block; 
+}
+
+.weather {
+    justify-content: center;
+    color: blue;
+    size: 50px;
+

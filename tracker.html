@@ -190,6 +190,9 @@
             grid-column-end: 4;
             grid-row-start: 7;
             grid-row-end: 9;
+            width: 35vw;
+            object-position: center;
+           /* padding: 100px; */
         }
 
         .item16 {
@@ -221,12 +224,42 @@
         <div class="item12">Total Income: $</div> <!--align text to left..somehow-->
         <div class="item13">Total Expenses: $</div>
         <div class="item14">Remaining: $</div> <!--maybe add hover over, "remember that every dollar has a job. Where can the remaining money is this category go to help pay down your debt quicker??-->
-        <div class="item15">First API</div>
+        <div class="item15">
+            <!--Structure to present the API weather data-->
+            <div class="container"> 
+                <div class="row">           
+                    <div class="col-sm-4 mt-3">       
+                        <div id="today">
+                            <h2 id="name">City</h2>
+                            <p id="day">Day</p>
+                            <img id="desc" src=""></img> 
+                            <p id="temp">Temp</p>
+                            <p id="humidity">Humidity</p>
+                            <p id="wind">Wind</p>
+                            <p id="uv">UV</p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="item16">Second API</div>
 
 
     </div>
     <p>additional information about the grid here..REMEMBER, EVERY DOLLAR HAS A JOB.</p>
-        
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+
+    <script src="./assets/weatherjs.js"></script>
+
 </body>
 </html>
