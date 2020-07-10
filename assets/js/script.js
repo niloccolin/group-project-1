@@ -7,6 +7,7 @@ var stockOpen = document.querySelector(".stockOpen");
 var stockHigh = document.querySelector(".stockHigh");
 var stockLow = document.querySelector(".stockLow");
 var stockClose = document.querySelector(".stockClose");
+var lastRefreshed = document.querySelector(".lastRefreshed")
 
 var formInput = function(event) {
     event.preventDefault();
@@ -35,11 +36,13 @@ var stockData = function(stock) {
         })
         .then (function(data) {
             console.log(data);
-            var nameValue = ["data"]["Meta Data"]["Symbol"];
+            var nameValue = data["Meta Data"]["2. Symbol"];
+            var refreshedDate = data["Meta Data"]["3. Last Refreshed"];
 
 
 
             stockName.innerHTML = nameValue;
+            lastRefreshed.innerHTML = refreshedDate;
 
         })
 
