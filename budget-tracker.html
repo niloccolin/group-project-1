@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Tracker</title>
-    <link rel="stylesheet" href="assets/css/budget-style.css">
+   <!-- <link rel="stylesheet" href="./assets/css/tracker-style.css">-->
 </head>
 <body>
     <div class="budget-container">
@@ -44,30 +44,29 @@
                     <div class="toggle">
                         <div class="tab1">Expenses</div>
                         <div class="tab2">Income</div>
-                        <div class="tab3">All</div>
+                        <div class="tab3 active">All</div>
                     </div>
                     <div class="hide" id="income">
                         <ul class="list"></ul>
-                        <div class="input">
-                            <input type="text" id="income-amount-input" name="amount" placeholder="Income">
-                            <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                            <div class="add-income"><button>add</button></div>
-                        </div>
+                       <div class="input">
+                        <input type="text" id="income-title-input" name="title" placeholder="Income">
+                        <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                        <div class="add-income"><button>add</button></div>
+                       </div>
                     </div>
                     <div class="hide" id="expense">
                         <ul class="list"></ul>
-                        <div class="input">
-                            <input type="text" id="expense-amount-input" name="amount" placeholder="Expense">
-                            <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
-                            <div class="add-expense"><button>add</button></div>
-                            </div>
-                        </div>
-                        <div id="all"></div>
-                            <ul class="list"></ul>
-                        </div>
-                     </div>
-
+                       <div class="input">
+                        <input type="text" id="expense-title-input" name="title" placeholder="Expense">
+                        <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+                        <div class="add-expense"><button>add</button></div>
+                       </div>
+                    </div>
+                    <div id="all">
+                        <ul class="list"></ul>
+                    </div>
                 </div>
-    <script src="assets/js/budget.js"></script>
+            </div> 
+    <script src= "./assets/js/budget.js"></script>
 </body>
 </html>
