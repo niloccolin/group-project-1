@@ -26,9 +26,9 @@ var formInput = function(event) {
 
 
 var stockData = function(stock) {
-    var apiUrl = ("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" +
-        stock +
-        "&outputsize=compact&apikey=D2S54E6DPH2K0C5M&datatype=json");
+    var apiUrl = ("https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" +
+    stock +
+    "&apikey=D2S54E6DPH2K0C5M&datatype=json");
 
     fetch(apiUrl)
         .then (function(response) {
@@ -36,22 +36,39 @@ var stockData = function(stock) {
         })
         .then (function(data) {
             console.log(data);
-            var nameValue = data["Meta Data"]["2. Symbol"];
-            var refreshedDate = data["Meta Data"]["3. Last Refreshed"];
+            var nameValue = data["Global Quote"]["01. symbol"];
+            var refreshedDate = data["Global Quote"]["07. latest trading day"];
+            var openStock = data["Global Quote"]["02. open"];
+            var highStock = data["Global Quote"]["03. high"];
+            var lowStock = data["Global Quote"]["04. low"];
+            var closeStock = data["Global Quote"]["08. previous close"];
 
 
 
-            stockName.innerHTML = nameValue;
-            lastRefreshed.innerHTML = refreshedDate;
+
+            stockName.textContent = nameValue;
+            lastRefreshed.textContent ="Last Refreshed: " + refreshedDate;
+            stockOpen.textContent = "Open: " + openStock;
+            stockHigh.textContent = "High: " + highStock;
+            stockLow.textContent = "Low: " + lowStock;
+            stockClose.textContent = "Close: " + closeStock;
+
 
         })
-
-
 };
-
-
-
-
-
 searchBtn.addEventListener("click", formInput);
 //STOCK API END
+
+
+//PAYMENT CAL START
+function computeLoan() {
+    var amount = document.getElementById('amount').value;
+    var interest_rate = document.getElementById('interest_rate').value;
+    var months = document.getElementById('months').value;
+
+    var interest = (amount * (interest_rate * .01)) / months;
+    var payment = ((amount / months) + interest).toFixed(2);
+    payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    document.getElementById('payment').innerHTML = "Monthly Payment = $" + payment;
+};
+//PAYMENT CAL CLOSE
