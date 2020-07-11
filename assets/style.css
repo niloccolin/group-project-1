@@ -31,7 +31,8 @@ footer {
     bottom: 0;
     margin-top: 275px;
     width: 100%;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
 }
 
 h3 {
