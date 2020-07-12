@@ -51,7 +51,7 @@ var stockData = function(stock) {
             stockOpen.textContent = "Open: " + openStock;
             stockHigh.textContent = "High: " + highStock;
             stockLow.textContent = "Low: " + lowStock;
-            stockClose.textContent = "Close: " + closeStock;
+            stockClose.textContent = "Previous Close: " + closeStock;
 
 
         })
