@@ -19,9 +19,9 @@ var formInput = function(event) {
         stockInput.value = "";
     }
 
-    else {
-        alert("Please Enter Symbol");
-    }
+    //else {
+        //alert("Please Enter Symbol");
+    //}
 };
 
 
