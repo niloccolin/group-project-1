@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="./assets/tracker-style.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- google font for brand name -->
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
@@ -181,25 +181,36 @@
         .item14 {
             grid-column-start: 2;
             grid-column-end: 4;
-            grid-row-start: 5;
-            grid-row-end: 6;
+            grid-row-start: 5; 
+            grid-row-end: 7; /* was 6 */
         }
 
-        .item15 {
+        .item15a {
             grid-column-start: 2;
-            grid-column-end: 4;
+            grid-column-end: 4; 
             grid-row-start: 7;
-            grid-row-end: 9;
+            grid-row-end: 8; /* was 9 */
             /* width: 35vw;
             /* object-position: center;
            /* padding: 100px; */
+           display: inline;
+        }
+
+        .item15b { /* didn't exist; added for expenses chart- */
+            grid-column-start: 2;
+            grid-column-end: 4; 
+            grid-row-start: 8;
+            grid-row-end: 9; 
+            width: 75vw; 
+            justify-content: space-around;
+            /* padding: 20px 20px; */
         }
 
         .item16 {
             grid-column-start: 2;
             grid-column-end: 4;
-            grid-row-start: 9;
-            grid-row-end: 11;
+            grid-row-start: 9; 
+            grid-row-end: 10;
         }
         </style>
 
@@ -224,11 +235,13 @@
         <div class="item12">Total Income: $</div> <!--align text to left..somehow-->
         <div class="item13">Total Expenses: $</div>
         <div class="item14">Remaining: $</div> <!--maybe add hover over, "remember that every dollar has a job. Where can the remaining money is this category go to help pay down your debt quicker??-->
-        <div class="item15">
+        <div class="item15a"> <!--calendar API-->
             <!--Structure to present the API weather data-->
-           <div class="container"> 
-               <!-- <div class="row">           
-                    <div class="col-sm-3 mt-3">       
+           <!--<div class="container"> 
+
+                <div class="row"> Test unhide -->
+
+                   <!-- <div class="col-sm-3 mt-3">       
                         <div id="today">
                             <h2 id="name">City</h2>
                             <p id="day">Day</p>
@@ -239,7 +252,8 @@
                             <p id="uv">UV</p>                           
                         </div>
                     </div> -->
-                    <div class="col-sm-3 mt-3">       
+
+                   <!-- <div class="col-sm-3 mt-3">-->       
                         <div class="wrapper">
                             <div class="container-calendar">
                                 <h3 id="monthAndYear"></h3>
@@ -270,18 +284,53 @@
                                         <option value=11>Dec</option>
                                     </select>
                                     <select id="year" onchange="jump()"></select>       
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                           
+                                                    
+                             </div>
+                        </div> <!--div class wrapper-->
+                    </div> <!--div class sm-3 mt-3-->
+                
+                 <!--</div> div class row--> 
+
+              <!--  </div> div class row
+            </div> div class container-->
+        </div> <!--item 15a-->
+       
+        <div class="item15b"> <!--this is the bar chart of expenses-->
+
+            <canvas id="myChart"></canvas>
+    
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    // The type of chart we want to create
+                    type: 'bar',
+                
+                    // The data for our dataset
+                    data: {
+                        labels: ['Mortgage/Rent', 'Utilities', 'Car Payment', 'Car Insurance', 'Phone', 'Gas', 'Groceries', 'Eating Out', 'Debt', 'Misc'],
+                        datasets: [{
+                            label: 'Monthly Expenses',
+                            backgroundColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 99, 132)',
+                            data: [1300, 600, 250, 70, 85, 160, 600, 600, 0, 500]
+                        }]
+                    },
+                
+                    // Configuration options for the bar graph go here
+                    options: {}
+                });
+            </script>
+
+        </div> <!--end of item 15a-->
+
         <div class="item16">Second API</div>
 
 
     </div>
     <p>additional information about the grid here..REMEMBER, EVERY DOLLAR HAS A JOB.</p>
      
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
