@@ -80,8 +80,7 @@ input[type=number] {
 } 
 /*/////////////   DASHBOARD    /////////////*/
 .budget-dashboard{
-    float: center;
-    display: block;
+    display: inline-block;
     width: 360px;
     height: 470px;
     background-color: #FFF;
