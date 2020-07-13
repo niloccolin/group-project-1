@@ -77,11 +77,22 @@ input[type=number] {
 .budget-header .account .outcome .outcome-total{
     color: #f0624d;
     font-family: 'Gilroy Bold';
-} 
+
+}
+
+.button-style {
+    margin-top: 35px;
+    font-size: 1.7em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Gilroy Bold';
+}
 /*/////////////   DASHBOARD    /////////////*/
 .budget-dashboard{
     display: inline-block;
-    width: 360px;
+    width: 400px;
     height: 470px;
     background-color: #FFF;
     margin-top: 35px;
@@ -125,12 +136,12 @@ input[type=number] {
 }
 /* ////////// ALL ///////////// */
 .budget-dashboard #all{
-    width: 360px;
+    width: 400px;
     height: 339px;
     position: relative;
 }
 .budget-dashboard #all ul{
-    width: 360px;
+    width: 400px;
     height: 285px;
     list-style: none;
     margin: 0;
@@ -150,36 +161,40 @@ input[type=number] {
 .budget-dashboard #all ul.list li .entry{
     width:250px;
     height: auto;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
+    position: left;
+    text-align: left;
 }
 .budget-dashboard #all ul.list li #edit{
     visibility: hidden;
 }
 .budget-dashboard #all ul.list li #delete{
     position: absolute;
-    width:20px;
+    width:50px;
     height: 20px;
     right: 20px;
     cursor: pointer;
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
+
+
 .budget-dashboard #all ul.list li.expense{
     color: #f0624d;
 }
 /* //////// EXPENSE ////////// */
 .budget-dashboard #expense{
-    width: 360px;
+    width: 400px;
     height: 339px;
     position: relative;
 }
 .budget-dashboard #expense .input{
     position: absolute;
     display: block;
-    width: 360px;
+    width: 400px;
     bottom: 0;
     border-top: 1px solid #ccc;
 }
@@ -215,11 +230,11 @@ input[type=number] {
     cursor: pointer;
 }
 .budget-dashboard #expense ul{
-    width: 360px;
+    width: 400px; /*was 360 */
     height: 285px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     margin-top:20px;
     overflow-x: auto;
 }
@@ -235,15 +250,19 @@ input[type=number] {
 .budget-dashboard #expense ul.list li .entry{
     width:250px;
     height: auto;
-    padding-left: 20px;
+    padding-left: 0px;
     margin-bottom: 10px;;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     font-family: 'Gilroy Bold';
+    position: left;
+    text-align: left;
     color: #f0624d;
 }
+
 .budget-dashboard #expense ul.list li #edit{
     position: absolute;
-    width:20px;
+    display: space-around;
+    width:25px;
     height: 20px;
     right: 50px;
     cursor: pointer;
@@ -252,23 +271,25 @@ input[type=number] {
 }
 .budget-dashboard #expense ul.list li #delete{
     position: absolute;
-    width:20px;
+    display: space-around;
+    width:25px;
     height: 20px;
     right: 20px;
     cursor: pointer;
     background-size: 20px 20px;
     background-repeat: no-repeat;
 }
+
 /* /////// INCOME //////// */
 .budget-dashboard #income{
-    width: 360px;
+    width: 400px;
     height: 339px;
     position: relative;
 }
 .budget-dashboard #income .input{
     position: absolute;
     display: block;
-    width: 360px;
+    width: 400px;
     bottom: 0;
     border-top: 1px solid #ccc;
 }
@@ -304,7 +325,7 @@ input[type=number] {
     cursor: pointer;
 }
 .budget-dashboard #income ul{
-    width: 360px;
+    width: 400px;
     height: 285px;
     list-style: none;
     margin: 0;
@@ -325,13 +346,17 @@ input[type=number] {
     width:250px;
     height: auto;
     padding-left: 20px;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
+    position: left;
+    text-align: left;
 }
+
 .budget-dashboard #income ul.list li #edit{
     position: absolute;
-    width:20px;
+    display: space-around;
+    width:25px;
     height: 20px;
     right: 50px;
     cursor: pointer;
@@ -340,7 +365,8 @@ input[type=number] {
 }
 .budget-dashboard #income ul.list li #delete{
     position: absolute;
-    width:20px;
+    display: space-around;
+    width:25px;
     height: 20px;
     right: 20px;
     cursor: pointer;
