@@ -46,7 +46,7 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 
 function searchcities(lat, lng){
        console.log("we are in searchcities");
-       let queryurl = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=8b58730b831d9dfe90f82c5fd73e1a99&units=imperial"  
+       let queryurl = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lng+"&appid=8b58730b831d9dfe90f82c5fd73e1a99&units=imperial"  
        var name = document.getElementById('name') 
        var humidity = document.getElementById('humidity')
        var temp = document.getElementById('temp')
