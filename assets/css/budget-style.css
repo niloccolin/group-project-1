@@ -318,3 +318,6 @@ input[type=number] {
     cursor: pointer;
     background-repeat: no-repeat;
 }
+.button-style {
+    padding-top: 20px;
+}
