@@ -85,9 +85,9 @@ Example screenshots are as follows:
 Support:
     Reach out to us as follows if you have any questions!
 
-    Brandon Armstrong   Email: barmstrong1188@gmail.com   Cell: (786) 252-3525
-    Collin Ellis        Email:                            Cell:
-    Laura Fry           Email: lafry5@yahoo.com           Cell: (602) 363-0253
-    Luis Gonzales       Email:                            Cell:
-    Kaitlin Price       Email: kaitlinprice3@gmail.com    Cell: (703) 509-8831
+    Brandon Armstrong   Email: barmstrong1188@gmail.com      Cell: (786) 252-3525
+    Collin Ellis        Email:                               Cell:
+    Laura Fry           Email: lafry5@yahoo.com              Cell: (602) 363-0253
+    Luis Gonzalez       Email: luisgonzalez1331@icloud.com   Cell: (310) 845-5828
+    Kaitlin Price       Email: kaitlinprice3@gmail.com       Cell: (703) 509-8831
 
