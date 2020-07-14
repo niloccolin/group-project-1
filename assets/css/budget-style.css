@@ -148,9 +148,13 @@ input[type=number] {
     height: 30px;
     vertical-align: middle;
 }
+/* ///// LIST ENTRIES //////*/
 .budget-dashboard #all ul.list li .entry{
+    display: flex;
+    float: left;
     width:250px;
     height: auto;
+    margin-left: 10px;
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
@@ -221,11 +225,12 @@ input[type=number] {
 .budget-dashboard #expense ul.list li *{
     display: inline-block;
     height: 30px;
-    vertical-align: middle;
+    vertical-align: left;
 }
+/* ///// LIST ENTRIES //////*/
 .budget-dashboard #expense ul.list li .entry{
     display: flex;
-    width:250px;
+    float: left;
     height: auto;
     padding-left: 20px;
     margin-bottom: 10px;;
@@ -234,14 +239,11 @@ input[type=number] {
     font-weight: bolder;
     color: #f0624d;
 }
-
 .budget-dashboard #expense ul.list li #edit{
-    align-self: flex-end;
     cursor: pointer;
     background-repeat: no-repeat;
 }
 .budget-dashboard #expense ul.list li #delete{
-    align-self: flex-end;
     cursor: pointer;
     background-repeat: no-repeat; 
 }
@@ -302,8 +304,10 @@ input[type=number] {
     height: 30px;
     vertical-align: middle;
 }
+/* ///// LIST ENTRIES //////*/
 .budget-dashboard #income ul.list li .entry{
-    width:250px;
+    display: flex;
+    float: left;
     height: auto;
     padding-left: 20px;
     margin-bottom: 10px;;
@@ -318,6 +322,7 @@ input[type=number] {
     cursor: pointer;
     background-repeat: no-repeat;
 }
+/* ///// RESOURCES BUTTON //////*/
 .button-style {
     padding-top: 20px;
 }
