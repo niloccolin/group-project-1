@@ -6,7 +6,8 @@
     <title>Budget Tracker</title>
     <link rel="stylesheet" href="./assets/css/budget-style.css">
     <link rel="stylesheet" href="./assets/foundation-css/foundation.css"> <!-- foundation CSS stylesheet link -->
-    <script src="https://kit.fontawesome.com/a2051d86f6.js" crossorigin="anonymous"></script> <!--fontawesome link for button icons-->
+   
+  <!--  <script src="https://kit.fontawesome.com/a2051d86f6.js" crossorigin="anonymous"></script> fontawesome link for button icons-->
 </head>
 <body>
     <div class="budget-container">
@@ -42,6 +43,7 @@
                         </div>
                     </div>
                 </div>
+                
                         <div class="budget-dashboard">
                             <div class="dash-title">Dashboard</div>
                             <div class="toggle">
@@ -54,7 +56,7 @@
                                <div class="input">
                                 <input type="text" id="income-title-input" name="title" placeholder="Income">
                                 <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                                <div class="add-income"><button><i class="fas fa-plus"></i></button></div>
+                                <div class="add-income"><button class="clear button secondary">add</button></div>
                                </div>
                             </div>
                             <div class="hide" id="expense">
@@ -62,19 +64,19 @@
                                <div class="input">
                                 <input type="text" id="expense-title-input" name="title" placeholder="Expense">
                                 <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
-                                <div class="add-expense"><button><i class="fas fa-plus"></i></button></div>
+                                <div class="add-expense"><button id="add-btn">add</button></div>
                                </div>
                             </div>
                             <div id="all">
                                 <ul class="list"></ul>
                             </div>
                         </div>
-                        <div class="button-style">
+                        <div class="button-style hollow button warning">
                             <button onclick="window.location.href='./resources.html';">
                                 Additional Resources
                             </button>
                         </div>
-
+                    
       </div>
  <script src= "./assets/js/budget.js"></script>
 </body>

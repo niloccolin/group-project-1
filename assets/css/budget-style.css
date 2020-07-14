@@ -149,7 +149,7 @@ input[type=number] {
     height: 30px;
     vertical-align: middle;
 }
-/* ///// LIST ENTRIES //////*/
+/* ///// LIST ENTRIES FOR ALL //////*/
 .budget-dashboard #all ul.list li .entry{
     display: flex;
     float: left;
@@ -228,7 +228,7 @@ input[type=number] {
     height: 30px;
     vertical-align: left;
 }
-/* ///// LIST ENTRIES //////*/
+/* ///// LIST ENTRIES FOR EXPENSES //////*/
 .budget-dashboard #expense ul.list li .entry{
     display: flex;
     float: left;
@@ -242,11 +242,11 @@ input[type=number] {
 }
 .budget-dashboard #expense ul.list li #edit{
     cursor: pointer;
-    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 .budget-dashboard #expense ul.list li #delete{
     cursor: pointer;
-    background-repeat: no-repeat; 
+    background-blend-mode: overlay; 
 }
 /* /////// INCOME //////// */
 .budget-dashboard #income{
@@ -305,7 +305,7 @@ input[type=number] {
     height: 30px;
     vertical-align: middle;
 }
-/* ///// LIST ENTRIES //////*/
+/* ///// LIST ENTRIES FOR INCOME //////*/
 .budget-dashboard #income ul.list li .entry{
     display: flex;
     float: left;
@@ -326,4 +326,9 @@ input[type=number] {
 /* ///// RESOURCES BUTTON //////*/
 .button-style {
     padding-top: 20px;
+    
 }
+/* .content {
+    display:flex;
+    flex-direction: column;
+} */
