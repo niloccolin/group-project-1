@@ -85,7 +85,7 @@ Example screenshots are as follows:
 Support:
     Reach out to us as follows if you have any questions!
 
-    Brandon Armstrong   Email:                            Cell:
+    Brandon Armstrong   Email: barmstrong1188@gmail.com   Cell: (786) 252-3525
     Collin Ellis        Email:                            Cell:
     Laura Fry           Email: lafry5@yahoo.com           Cell: (602) 363-0253
     Luis Gonzales       Email:                            Cell:
