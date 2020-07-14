@@ -74,7 +74,7 @@ addIncome.addEventListener("click", function(){
 incomeList.addEventListener("click", deleteOrEdit);
 expenseList.addEventListener("click", deleteOrEdit);
 allList.addEventListener("click", deleteOrEdit);
-//// EDIT AND DELETE BUTTONS
+//// EDIT AND DELETE BUTTONS  ///////
 function deleteOrEdit(event){
     const targetBtn = event.target;
     const entry = targetBtn.parentNode;
@@ -122,11 +122,12 @@ function updateUI(){
     });
     localStorage.setItem("entry_list", JSON.stringify(ENTRY_LIST));
 }
+////////// ADD HTML/BUTTONS FOR LIST ELEMENTS ////////////
 function showEntry(list, type, title, amount, id){
     const entry = ` <li id = "${id}" class="${type}">
-                        <div class="entry">${title}: $${amount}</div>
+                        <div class="entry">${title}: $${amount}
                         <button id="edit">edit</button>
-                        <button id="delete">delete</button>
+                        <button id="delete">delete</button></div>
                     </li>`;
 
     const position = "afterbegin";
@@ -138,6 +139,7 @@ function clearElement(elements){
         element.innerHTML = "";
     })
 }
+////// MATH FOR ENTRIES ///////
 function calculateTotal(type, list){
     let sum = 0;
 
@@ -147,10 +149,12 @@ function calculateTotal(type, list){
         }
     })
     return sum;
+ //// FUNCTION TO CALCULATE BALANCE
 }
 function calculateBalance(income, outcome){
     return income - outcome;
 }
+//// FUNCTIONS TO SHOW/HIDE LISTS
 function clearInput(inputs){
     inputs.forEach( input => {
         input.value = "";
