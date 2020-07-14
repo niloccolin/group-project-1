@@ -102,6 +102,7 @@ input[type=number] {
     margin-left: 20px;
 }
 .toggle .tab1, .tab2, .tab3{
+    color: rgb(129,154,212);
     display: inline-block;
     cursor: pointer;
     font-size: 1.1em;
@@ -164,7 +165,7 @@ input[type=number] {
 }
 .budget-dashboard #all ul.list li #delete{
     cursor: pointer;
-    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 .budget-dashboard #all ul.list li.expense{
     color: #f0624d;
