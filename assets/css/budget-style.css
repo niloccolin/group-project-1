@@ -16,7 +16,7 @@ input[type=number] {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgb(129,154,212);
+    background-color: rgba(236, 236, 236, 0);
 }
 .budget-container .app-title{
     margin-top: 45px;
@@ -38,14 +38,14 @@ input[type=number] {
 }
 .budget-header .balance .title{
     color: #FFF;
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Gilroy Bold';
     text-align: center;
 }
 .budget-header .balance .value{
     color: #FFF;
     font-size: 2em;
-    margin-top: 10px;
+    margin-top: 2px;
     font-family: 'Gilroy Bold';
     text-align: center;
 }
@@ -62,9 +62,15 @@ input[type=number] {
     width: 100px;
     vertical-align: middle;
 }
+
+/*//////  Income and expenses at top of dashboard   /////////*/
+
 .budget-header .account .income .title{
     color: #FFF;
-    opacity: 0.5;
+    font-weight: normal;
+    font-size: x-large;
+    opacity: 100%;
+    background-color: rgb(144, 238, 144);
 }
 .budget-header .account .income .income-total{
     color: #FFF;
@@ -72,12 +78,15 @@ input[type=number] {
 }
 .budget-header .account .outcome .title{
     color: #FFF;
-    opacity: 0.5;
+    opacity: 100%;
+    font-size: x-large;
+    background-color:rgb(255, 160, 122);
 }
 .budget-header .account .outcome .outcome-total{
-    color: #f0624d;
+    color:#FFF;
     font-family: 'Gilroy Bold';
     font-weight: bolder;
+    background-color: rgba(119, 136, 153, 0.582);
 } 
 /*/////////////   DASHBOARD    /////////////*/
 .budget-dashboard{
@@ -238,7 +247,7 @@ input[type=number] {
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
     font-weight: bolder;
-    color: #f0624d;
+    color: #f19081;
 }
 .budget-dashboard #expense ul.list li #edit{
     cursor: pointer;
@@ -332,3 +341,66 @@ input[type=number] {
     display:flex;
     flex-direction: column;
 } */
+
+
+/* add, edit, delete button styles*/
+
+.add-btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.add-btn:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.add-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.button-style hollow button warning {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.button-style hollow button warning:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.button-style hollow button warning:active {
+	position:relative;
+	top:1px;
+}
+
+.income {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.income-total {
+    background-color: rgba(119, 136, 153, 0.582);
+
+}
