@@ -1,0 +1,167 @@
+.header-brand-title {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: rgb(129,154,212);
+    margin: auto;
+    color: white;
+}
+
+.header-brand-title a:link, .header-brand-title a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.header-brand-title a:link {
+    text-decoration: none;
+}
+
+.fi {
+    color: rgb(253,255,74);
+}
+
+/* beginning of weather css */
+#today {
+    background-color: lightgray;
+    border: solid, black;
+    border-top: solid, black;
+    border-bottom: solid, black;
+    border-left: solid, black;
+    border-right: solid, black;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    font-family: sans-serif
+   }
+
+ #desc {
+    display: inline-block; 
+    justify-content: space-around;
+    display: inline;
+
+}
+
+#name {
+    display: inline;
+
+}
+
+#day {
+    display: inline-block; 
+}
+
+.weather {
+    justify-content: center;
+    color: blue;
+    size: 50px;
+}
+
+/* eand of weather css */
+
+/* beginning of calendar css */
+html {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+  }
+  
+ /* body {
+    margin: 0;
+    background: #504f4f;
+    font-size: 1em;
+  } */
+  
+  .wrapper {
+    margin: 15px auto;
+    max-width: 800px;
+  }
+  
+  .container-calendar {
+    background: #ffffff;
+    padding: 15px;
+    max-width: 475px;
+    margin: 0 auto;
+    overflow: auto;
+    width: 75vw;
+    display: inline;
+  }
+  
+  .button-container-calendar button {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #00a2b7;
+    color: #fff;
+    border: 1px solid #0aa2b5;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  
+  .table-calendar {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table-calendar td, .table-calendar th {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .date-picker.selected {
+    font-weight: bold;
+    outline: 1px dashed #00BCD4;
+  }
+  
+  .date-picker.selected span {
+    border-bottom: 2px solid currentColor;
+  }
+  
+  /* sunday */
+  .date-picker:nth-child(1) {
+  color: red;
+  }
+  
+  /* friday */
+  .date-picker:nth-child(6) {
+  color: green;
+  }
+  
+  #monthAndYear {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .button-container-calendar {
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    clear: both;
+  }
+  
+  #previous {
+    float: left;
+  }
+  
+  #next {
+    float: right;
+  }
+  
+  .footer-container-calendar {
+    margin-top: 1em;
+    border-top: 1px solid #dadada;
+    padding: 10px 0;
+  }
+  
+  .footer-container-calendar select {
+    cursor: pointer;
+    display: inline-block;
+    zoom: 1;
+    background: #ffffff;
+    color: #585858;
+    border: 1px solid #bfc5c5;
+    border-radius: 3px;
+    padding: 5px 1em;
+  }
+
+  /* end of calendar css */

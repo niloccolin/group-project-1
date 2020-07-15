@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="./assets/css/budget-style.css">
+    <link rel="stylesheet" href="./assets/foundation-css/foundation.css"> <!-- foundation CSS stylesheet link -->
+   
+  <!--  <script src="https://kit.fontawesome.com/a2051d86f6.js" crossorigin="anonymous"></script> fontawesome link for button icons-->
+</head>
+<body>
+    <style>
+    body {
+        background-image: url("assets/images/notebook.jpg");
+        background-color: #cccccc;
+        background-size: 1550px;
+        background-position:top;
+        background-repeat: no-repeat;
+       }
+    </style>
+    <div class="budget-container">
+        <div class="app-title">
+            <a href="index.html"><img src="assets/images/logo-transparent.png" alt="xpensifi homepage" style="width:150px;height:50px;"></a>
+        </div>
+        <hr> <!-- foundation CSS element -->
+                <div class="budget-header">
+                    <div class="balance">
+                        <div class="title">
+                            Balance
+                        </div>
+                        <div class="value">
+                            <small>$</small>0
+                        </div>
+                    </div>
+                    <div class="account">
+                        <div class="income">
+                            <div class="title">
+                                Income
+                            </div>
+                            <div class="income-total">
+                                <small>$</small>0
+                            </div>
+                        </div>
+                        <div class="outcome">
+                            <div class="title">
+                                Expenses
+                            </div>
+                            <div class="outcome-total">
+                                <small>$</small>0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                        <div class="budget-dashboard">
+                            <div class="dash-title">Dashboard</div>
+                            <div class="toggle">
+                                <div class="tab1">Expenses</div>
+                                <div class="tab2">Income</div>
+                                <div class="tab3 active">All</div>
+                            </div>
+                            <div class="hide" id="income">
+                                <ul class="list"></ul>
+                               <div class="input">
+                                <input type="text" id="income-title-input" name="title" placeholder="Income">
+                                <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                                <div class="add-income"><button class="clear button-secondary">add</button></div>
+                               </div>
+                            </div>
+                            <div class="hide" id="expense">
+                                <ul class="list"></ul>
+                               <div class="input">
+                                <input type="text" id="expense-title-input" name="title" placeholder="Expense">
+                                <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+                                <div class="add-expense"><button id="add-btn">add</button></div>
+                                
+                               </div>
+                            </div>
+                            <div id="all">
+                                <ul class="list"></ul>
+                            </div>
+                        </div>
+                        <div class="button-style hollow button warning">
+                            <button onclick="window.location.href='./resources.html';">
+                                Additional Resources
+                            </button>
+                        </div>
+                    
+      </div>
+ <script src= "./assets/js/budget.js"></script>
+</body>
+</html>

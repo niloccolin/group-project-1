@@ -1,0 +1,89 @@
+.button-style {
+    text-align: center;
+}
+
+.fi {
+    color: rgb(253,255,74);
+}
+
+.header-brand-title {
+    font-family: 'Julius Sans One', sans-serif; /* google font-family call for brand title */
+    background-color: rgb(129,154,212);
+    margin: auto;
+    color: white;
+}
+
+.header-brand-title a:link, .header-brand-title a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+subheader h2 {
+    font-family: 'Mukta', sans-serif; /* google font-family call for subheader/tag line */
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    margin-top: 275px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    background-color: rgb(253,255,74);
+}
+
+button {
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    padding: 30px 100px 30px 100px;
+    border: 0px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px;
+}
+
+#today {
+    background-color: lightgray;
+    border: solid, black;
+    border-top: solid, black;
+    border-bottom: solid, black;
+    border-left: solid, black;
+    border-right: solid, black;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    font-family: sans-serif
+   }
+
+ #desc {
+    display: inline-block; 
+    justify-content: space-around;
+    display: inline;
+
+}
+
+#name {
+    display: inline-block;
+
+}
+
+#day {
+    display: inline-block; 
+}
+
+.weather {
+    justify-content: center;
+    color: blue;
+    size: 50px;
+}
