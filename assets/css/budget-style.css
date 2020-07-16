@@ -104,6 +104,11 @@ input[type=number] {
     margin-top: 30px;
     font-family: 'Gilroy Bold';
 }
+#add-btn {
+    cursor: pointer;
+    border: solid;
+    
+}
 /* ////// TOGGLE LISTS //////*/
 .toggle{
     display: block;
@@ -111,12 +116,15 @@ input[type=number] {
     margin-left: 20px;
 }
 .toggle .tab1, .tab2, .tab3{
-    color: rgb(129,154,212);
+    color: rgb(0, 0, 0);
     display: inline-block;
     cursor: pointer;
     font-size: 1.1em;
     font-family: 'Gilroy Bold';
     opacity: 0.4;
+}
+.active {
+    opacity: 6;
 }
 .toggle .tab2, .tab3{
     margin-left: 10px;
@@ -175,6 +183,9 @@ input[type=number] {
 .budget-dashboard #all ul.list li #delete{
     cursor: pointer;
     background-blend-mode: overlay;
+    width:22px;
+    height:22px;
+    margin-right: 10px;
 }
 .budget-dashboard #all ul.list li.expense{
     color: #f0624d;
@@ -241,21 +252,26 @@ input[type=number] {
 .budget-dashboard #expense ul.list li .entry{
     display: flex;
     float: left;
+    width:250px;
     height: auto;
-    padding-left: 20px;
+    margin-left: 10px;
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
-    font-weight: bolder;
+    font-weight:bold;
     color: #f19081;
 }
 .budget-dashboard #expense ul.list li #edit{
     cursor: pointer;
     background-blend-mode: overlay;
+    width:20px;
+    height:20px; 
 }
 .budget-dashboard #expense ul.list li #delete{
     cursor: pointer;
     background-blend-mode: overlay; 
+    width:22px;
+    height:22px;
 }
 /* /////// INCOME //////// */
 .budget-dashboard #income{
@@ -318,8 +334,9 @@ input[type=number] {
 .budget-dashboard #income ul.list li .entry{
     display: flex;
     float: left;
+    width:250px;
     height: auto;
-    padding-left: 20px;
+    margin-left: 10px;
     margin-bottom: 10px;;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
@@ -327,10 +344,14 @@ input[type=number] {
 .budget-dashboard #income ul.list li #edit{
     cursor: pointer;
     background-repeat: no-repeat;
+    width:20px;
+    height:20px;
 }
 .budget-dashboard #income ul.list li #delete{
     cursor: pointer;
     background-repeat: no-repeat;
+    width:22px;
+    height:22px;
 }
 /* ///// RESOURCES BUTTON //////*/
 .button-style {
@@ -345,7 +366,7 @@ input[type=number] {
 
 /* add, edit, delete button styles*/
 
-.add-btn {
+ /*.add-btn {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
 	background-color:#f9f9f9;
@@ -360,7 +381,7 @@ input[type=number] {
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
-}
+} */
 .add-btn:hover {
 	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
 	background-color:#e9e9e9;
