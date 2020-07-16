@@ -62,9 +62,7 @@ input[type=number] {
     width: 100px;
     vertical-align: middle;
 }
-
 /*//////  Income and expenses at top of dashboard   /////////*/
-
 .budget-header .account .income .title{
     color: #FFF;
     font-weight: normal;
@@ -107,7 +105,6 @@ input[type=number] {
 #add-btn {
     cursor: pointer;
     border: solid;
-    
 }
 /* ////// TOGGLE LISTS //////*/
 .toggle{
@@ -174,7 +171,7 @@ input[type=number] {
     width:250px;
     height: auto;
     margin-left: 10px;
-    margin-bottom: 10px;
+    padding-top: 6px;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
 }
@@ -187,7 +184,8 @@ input[type=number] {
     width:22px;
     height:22px;
     margin-right: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
+    padding-top: 5px;
 }
 .budget-dashboard #all ul.list li.expense{
     color: #f0624d;
@@ -257,7 +255,9 @@ input[type=number] {
     width:250px;
     height: auto;
     margin-left: 25px;
-    margin-bottom: 12px;;
+    margin-bottom: 1px;;
+    padding-top: 7px;
+    padding-bottom: 3px;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
     font-weight:bold;
@@ -268,13 +268,13 @@ input[type=number] {
     background-blend-mode: overlay;
     width:20px;
     height:20px; 
+    padding-top: 7px;
 }
 .budget-dashboard #expense ul.list li #delete{
     cursor: pointer;
     background-blend-mode: overlay; 
     width:22px;
     height:22px;
-    
 }
 /* /////// INCOME //////// */
 .budget-dashboard #income{
@@ -340,7 +340,9 @@ input[type=number] {
     width:250px;
     height: auto;
     margin-left: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
+    padding-top: 7px;
+    padding-bottom: 1px;
     word-wrap: break-word;
     font-family: 'Gilroy Bold';
 }
@@ -349,8 +351,10 @@ input[type=number] {
     background-repeat: no-repeat;
     width:20px;
     height:20px;
-    margin-top: 2px;
+    margin-top: 6px;
     margin-bottom: 4px;
+    padding-top: 1px;
+    /* padding-bottom: 4px; */
 }
 .budget-dashboard #income ul.list li #delete{
     cursor: pointer;
@@ -358,36 +362,12 @@ input[type=number] {
     margin-bottom: 4px;
     width:22px;
     height:22px;
+    margin-top: 5px;
 }
 /* ///// RESOURCES BUTTON //////*/
 .button-style {
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
-/* .content {
-    display:flex;
-    flex-direction: column;
-} */
-
-
-/* add, edit, delete button styles*/
-
- /*.add-btn {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	background-color:#f9f9f9;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-} */
 .add-btn:hover {
 	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
 	background-color:#e9e9e9;
@@ -396,7 +376,6 @@ input[type=number] {
 	position:relative;
 	top:1px;
 }
-
 .button-style hollow button warning {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
@@ -421,13 +400,10 @@ input[type=number] {
 	position:relative;
 	top:1px;
 }
-
 .income {
     color: lightgreen;
     font-weight: bold;
 }
-
 .income-total {
     background-color: rgba(119, 136, 153, 0.582);
-
 }
