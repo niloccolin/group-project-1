@@ -126,8 +126,8 @@ function updateUI(){
 function showEntry(list, type, title, amount, id){
     const entry = ` <li id = "${id}" class="${type}">
                         <div class="entry">${title}: $${amount}</div>
-                        <button class="clear button button secondary" id="edit">edit</button>
-                        <button class="clear button button secondary" id="delete">delete</button>
+                        <img id="edit" src="assets/images/edit.png">
+                        <img id="delete" src="assets/images/delete.png">
                     </li>`;
 
     const position = "afterbegin";
