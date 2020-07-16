@@ -407,3 +407,12 @@ input[type=number] {
 .income-total {
     background-color: rgba(119, 136, 153, 0.582);
 }
+a {
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+}
+a:hover {
+    color: rgb(99, 214, 143);
+    opacity: .5;
+}
