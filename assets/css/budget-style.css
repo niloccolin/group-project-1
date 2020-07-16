@@ -408,8 +408,9 @@ input[type=number] {
     background-color: rgba(119, 136, 153, 0.582);
 }
 a {
-    font-size: larger;
+    font-size: x-large;
     font-weight: bolder;
+    font-style: italic;
     color: black;
 }
 a:hover {
