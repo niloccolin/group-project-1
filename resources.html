@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" type="text/css" href="./assets/tracker-style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/budget-style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- google font for brand name -->
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -13,12 +14,19 @@
 </head>
 <body>
    
+    <!-- clickable brand name that leads to dashboard page
+    <div class="budget-container">
+        <div class="app-title">
+            <a href="budget-tracker.html"><img src="./assets/images/logo-transparent.png" alt="xpensifi homepage" style="width:150px;height:50px;"></a>
+        </div>
+    </div>-->
+
     <section class = "grid-container">
         <div class = "grid-item-info">
           <div class="wrapper">
               <div class="one"> <!--payment calculator and stock ticker-->
 
-                <h5>Payment Calculator</h5>
+                <h3>Payment Calculator</h3>
                 <div>
                     <p>Loan Amount: $<input id="amount" type="number" min="1" max="1000000" onchange="computeLoan()"></p>
                     <p>Interest Rate: <input id="interest_rate" type="number" min="0" max="100" value="10" step=".1"
@@ -29,7 +37,7 @@
                 </div>
     
                 
-                <h5>Enter Stock Symbol: </h5>
+                <h3>Enter Stock Symbol: </h3>
                 <form>
                     <input type="text" id="stockInput" placeholder="ex. IBM, KO" value="">
                     <button type="submit" id="searchBtn">Submit</button>
@@ -45,10 +53,67 @@
                 
               </div> <!--end of payment calculator and stock ticker-->
               
-              <div class="two"> <!--Xpensifi logo-->
+              <!--Xpensifi logo-->
+             <div class="two"> 
                <a href="budget-tracker.html"> <img src="./assets/images/gplogo.jpg" alt="xpensifi" style="max-width:100%;height:auto;"></a>
               </div>
 
+              <!--Bar Chart
+              <div class="two">
+
+                These are needed for the bar chart
+                <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+                <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+                    <div id="container" style="width: 100%; height: 100%"></div>
+              
+              <script>
+
+                anychart.onDocumentReady(function() {
+                  // set the data
+                  var data = [
+                      {x: "Mortgage", value: 1300},
+                      {x: "Utilities", value: 600},
+                      {x: "Car Payment", value: 250},
+                      {x: "Car Insurance", value: 75},
+                      {x: "Phone", value: 85},
+                      {x: "Gas", value: 140},
+                      {x: "Groceries", value: 600}
+                      {x: "Eating Out", value: 800}
+                      {x: "Debt", value: 0}
+                      {x: "Misc", value: 500}
+                  ];
+                
+                  // create the chart
+                  var chart = anychart.pie();
+                
+                  // set the chart title
+                  chart.title("Monthly Expenses");
+                
+                  // add the data
+                  chart.data(data);
+                
+                  // display the chart in the container
+                  chart.container('container');
+                  chart.draw();
+                
+                });
+                </script>
+                
+                <style>
+                
+                #container {
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  padding: 0;
+                }
+                
+                </style>
+
+                </div> end of div class two-->
+
+
+              <!--Calendar-->
              <section class="three"> 
                 <div class="wrapper">
                     <div class="container-calendar">
@@ -106,6 +171,18 @@
       </section>
       
       <style>
+     
+     body {
+        background-image: url("assets/images/notebook.jpg");
+        background-color: #cccccc;
+        background-size: 1980px;  /*changed from 1660px*/
+        background-position: top;
+        background-repeat: no-repeat;
+      
+     }
+       
+
+     
      .container-calendar {
          position: center;
          margin-left: 100px;
@@ -135,9 +212,9 @@
       text-align: center; /* added to move the text in the grid */
       }
       
-      .one:hover {  
+     /*.one:hover {  
       opacity: 0.5;
-      }
+      }*/
       
       .one {
       grid-column: 1;
@@ -145,26 +222,26 @@
       border: #dddddd 2px solid; 
       }
       
-      .two:hover {  
+     /* .two:hover {  
       opacity: 0.5;
-      }
+      }*/
       .two { 
       grid-column: 2/3;
       grid-row: 1/3;
       border: #dddddd 2px solid;
      }
       
-      .three:hover {  
+     /* .three:hover {  
       opacity: 0.5;
-      }
+      }*/
       .three {
       grid-column: 3;
       grid-row: 1/3;
       border: #dddddd 2px solid;
      }
-      .four:hover {  
+     /* .four:hover {  
       opacity: 0.5;
-      }
+      }*/
       .four { /*weather */
       grid-column: 2; 
       grid-row: 3; 
