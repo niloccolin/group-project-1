@@ -1,17 +1,5 @@
 # XpensiFI Budget Tracker
 
-
-
-
-
-REPOSITORY TITLE: niloccolin/group-project-1
-
-    Created code from scratch. 
-
-Repository Link: https://github.com/niloccolin/group-project-1
-
-Github Page: https://niloccolin.github.io/group-project-1/
-
 TABLE OF CONTENTS:
     
     -  Clone
@@ -36,18 +24,25 @@ Contributing:
 Description:
     This code will provide a detailed budget tracker for the user. The user will not only be able to track their sources of expenses, but also their income. They will be able to edit or delete their income or expenses once they have entered their data and the dashboard will summarize their summary balance (total income - total expenses). On the additional resources page there is a calendar to reference specific dates, as needed, for paying bills. Also, there is a payment calculator, a stock ticker and local weather forecast. 
 
+    Created code from scratch. 
+
+Repository Link: https://github.com/niloccolin/group-project-1
+
+Github Page: https://niloccolin.github.io/group-project-1/
+
 When you follow the link to our deployed app you will be met with a welcome screen:
 ![screenshot](./assets/images/screenshot1.jpg)
 
-Click BEGIN! to go to our Budget Tracker Dashboard.
-
-![budgetscrn](https://user-images.githubusercontent.com/65680645/87899573-9e7cd700-ca1f-11ea-8578-febadcec95ea.png)
+Click on the button to go to our Budget Tracker Dashboard.
 
 ![mobile](https://user-images.githubusercontent.com/65680645/87899580-a0469a80-ca1f-11ea-9001-3081c825867c.png)
 
+![budgetscrn](https://user-images.githubusercontent.com/65680645/87899573-9e7cd700-ca1f-11ea-8578-febadcec95ea.png)
+
+
+
 If you click the Additional Resources Link, you'll be taken to our API Dashboard:
-
-
+![resourcesscrn](https://user-images.githubusercontent.com/65680645/87899909-b56ff900-ca20-11ea-8687-edf7b87cb737.png)
 
 
 
